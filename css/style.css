@@ -548,4 +548,7 @@ footer ul a {
     .block-uslugi ul {
         margin-left: 30em;
     }
+    .block-form_contact {
+        padding: 55px 0 70px 55px;
+    }
 }
