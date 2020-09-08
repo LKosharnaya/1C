@@ -370,7 +370,8 @@ ul.uslugi a:hover span {
 }
 
 .block-trust_us .list-logo {
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
