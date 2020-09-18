@@ -545,6 +545,7 @@ header.anime2 #logo{
         background-size: 50px, 50px, 50px, 50px;
     }
 }
+
 @keyframes popup_display-anime{
     0%{
         opacity: 0;     
@@ -614,4 +615,32 @@ header.anime2 #logo{
   -webkit-transition: max-height 1.5s;
   transition: max-height 1.5s;
   max-height: 0;
+}
+@media screen and (max-width:767px){
+    @keyframes popup_form-anime{
+        0%{      
+        }
+        100%{
+            width: 100%;
+            height: 605px;
+            padding: 60px 0;
+            background-size: 50px, 50px, 50px, 50px;
+        }
+    }
+    @keyframes popup_form-anime2{
+       
+        0%{
+            width: 100%;
+            height: 625px;
+            padding: 60px 0;
+            background-size: 50px, 50px, 50px, 50px;
+        }
+        100%{      
+            width: 305px;
+            height: 305px;
+            padding: 160px;
+            background-size: 150px, 150px, 150px, 150px;
+            margin: 0 auto;
+        }
+    } 
 }

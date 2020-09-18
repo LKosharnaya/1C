@@ -1235,4 +1235,26 @@ footer ul a {
     footer ul li, footer ul a{
         font-size: 14px;
     }
+    #form_popup{
+        width: 100%;
+        max-height: 100vh;
+        height: 675px;
+        padding: 50px 0;
+    }
+    #form_popup .block-form_contact{
+        background-size: 150px, 150px, 150px, 150px;
+        padding: 160px;
+    }
+    #form_popup .block-form_contact .text,
+    #form_popup .block-form_contact .form_el{
+        width: 100%;
+    }
+    #form_popup .block-form_contact textarea{
+        height: 150px;
+    }
+    #form_popup .close{
+        padding: 10px;
+        top: 10px;
+        right: 10px;
+    }
 }
