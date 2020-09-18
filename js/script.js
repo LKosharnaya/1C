@@ -116,11 +116,12 @@ if( wwidth>=768){
         $('.block-usligi').addClass('anime');
 
     }
-    function Display(){
-        $('#form_popup .block-form_contact h5').css('display','block');
-        $('#form_popup .block-form_contact form').css('display','flex');
-    }
-}    
+    
+}  
+function Display(){
+    $('#form_popup .block-form_contact h5').css('display','block');
+    $('#form_popup .block-form_contact form').css('display','flex');
+}  
 $(document).ready(function() {
     $('#form_popup').popup({
         opacity: 0.5,
