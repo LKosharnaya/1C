@@ -1,0 +1,617 @@
+.block-anime_uslugi.anime1 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime1 .row:first-child .col-4 .yel,
+.block-anime_uslugi.anime1 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime1 .row:first-child .col-5 .red,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-3 .yel,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-4 .or,
+.block-anime_uslugi.anime4 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime4 .row:first-child .col-4 .yel,
+.block-anime_uslugi.anime4 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime4 .row:first-child .col-5 .red,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-3 .yel,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-4 .or{
+    animation: rotate1 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime1 .row:first-child .col-3 .or,
+.block-anime_uslugi.anime1 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-2 .or,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-5 .or,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-5 .redd,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-5 .yel,
+.block-anime_uslugi.anime4 .row:first-child .col-3 .or,
+.block-anime_uslugi.anime4 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-2 .or,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-5 .or,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-5 .redd,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-5 .yel{
+    animation: rotate2 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime1 .row:first-child .col-4 .or, 
+.block-anime_uslugi.anime1 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime1 .row:nth-child(2) .col-4 .yel,
+.block-anime_uslugi.anime4 .row:first-child .col-4 .or, 
+.block-anime_uslugi.anime4 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime4 .row:nth-child(2) .col-4 .yel{
+    animation: rotate3 1s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+.block-anime_uslugi.anime2 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime2 .row:first-child .col-2 .redd,
+.block-anime_uslugi.anime2 .row:first-child .col-4 .yel,
+.block-anime_uslugi.anime2 .row:first-child .col-4 .redd,
+.block-anime_uslugi.anime2 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime2 .row:first-child .col-5 .redd,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-1 .redd,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-3 .yel,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-3 .redd,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-4 .or,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-4 .redd,
+.block-anime_uslugi.anime5 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime5 .row:first-child .col-2 .redd,
+.block-anime_uslugi.anime5 .row:first-child .col-4 .yel,
+.block-anime_uslugi.anime5 .row:first-child .col-4 .redd,
+.block-anime_uslugi.anime5 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime5 .row:first-child .col-5 .redd,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-1 .redd,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-3 .yel,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-3 .redd,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-4 .or,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-4 .redd
+{
+    animation: rotate3 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime2 .row:first-child .col-2 .yel,
+.block-anime_uslugi.anime2 .row:first-child .col-3 .yel,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-1 .yel,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-2 .yel,
+.block-anime_uslugi.anime5 .row:first-child .col-2 .yel,
+.block-anime_uslugi.anime5 .row:first-child .col-3 .yel,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-1 .yel,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-2 .yel{
+    animation: rotate4 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime2 .row:first-child .col-2 .red,
+.block-anime_uslugi.anime2 .row:first-child .col-3 .red,
+.block-anime_uslugi.anime2 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime2 .row:first-child .col-4 .or,
+.block-anime_uslugi.anime2 .row:first-child .col-4 .red,
+.block-anime_uslugi.anime2 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-2 .red,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-3 .red,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-4 .red,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-4 .yel,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-5 .red,
+.block-anime_uslugi.anime2 .row:nth-child(2) .col-5 .redd,
+.block-anime_uslugi.anime5 .row:first-child .col-2 .red,
+.block-anime_uslugi.anime5 .row:first-child .col-3 .red,
+.block-anime_uslugi.anime5 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime5 .row:first-child .col-4 .or,
+.block-anime_uslugi.anime5 .row:first-child .col-4 .red,
+.block-anime_uslugi.anime5 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-2 .red,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-3 .red,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-4 .red,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-4 .yel,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-5 .red,
+.block-anime_uslugi.anime5 .row:nth-child(2) .col-5 .redd
+{
+    animation: rotate5 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime2 .row:first-child .col-5 .red,
+.block-anime_uslugi.anime5 .row:first-child .col-5 .red{
+    animation: rotate2 1s ease;
+    animation-fill-mode: forwards;
+}
+
+
+
+.block-anime_uslugi.anime3 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime3 .row:first-child .col-2 .yel,
+.block-anime_uslugi.anime3 .row:first-child .col-3 .yel,
+.block-anime_uslugi.anime3 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-1 .yel,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-2 .yel,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-4 .or,
+.block-anime_uslugi.anime6 .row:first-child .col-2 .or,
+.block-anime_uslugi.anime6 .row:first-child .col-2 .yel,
+.block-anime_uslugi.anime6 .row:first-child .col-3 .yel,
+.block-anime_uslugi.anime6 .row:first-child .col-5 .or,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-1 .yel,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-2 .yel,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-4 .or
+{
+    animation: rotate3 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime3 .row:first-child .col-2 .red,
+.block-anime_uslugi.anime6 .row:first-child .col-2 .red
+{
+    animation: rotate1 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime3 .row:first-child .col-3 .red,
+.block-anime_uslugi.anime3 .row:first-child .col-4 .red,
+.block-anime_uslugi.anime3 .row:first-child .col-4 .or,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-2 .red,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-3 .red,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-2 .or,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-4 .red,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-5 .red,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-5 .yel,
+.block-anime_uslugi.anime6 .row:first-child .col-3 .red,
+.block-anime_uslugi.anime6 .row:first-child .col-4 .red,
+.block-anime_uslugi.anime6 .row:first-child .col-4 .or,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-2 .red,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-3 .red,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-3 .or,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-2 .or,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-4 .red,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-5 .red,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-5 .yel
+{
+    animation: rotate5 1s ease;
+    animation-fill-mode: forwards;
+}
+.block-anime_uslugi.anime3 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime3 .row:first-child .col-5 .red,
+.block-anime_uslugi.anime3 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-4 .yel,
+.block-anime_uslugi.anime3 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime6 .row:first-child .col-3 .redd,
+.block-anime_uslugi.anime6 .row:first-child .col-5 .red,
+.block-anime_uslugi.anime6 .row:first-child .col-5 .yel,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-2 .redd,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-4 .yel,
+.block-anime_uslugi.anime6 .row:nth-child(2) .col-2 .redd
+{
+    animation: rotate4 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100% {
+        transform: rotate(270deg);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate3 {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100% {
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotate4 {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+@keyframes rotate5 {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+.block-usligi.anime{
+    background: url(../img/bg_uslugi_anime.jpg) no-repeat;
+    animation: background1-anime 5s ease;
+    animation-fill-mode: forwards;
+    height: 505px;
+    box-sizing: border-box;
+}
+.block-usligi.anime ul.list_uslugi{
+    height: 505px;
+    
+}
+.block-usligi.anime .list_uslugi li, .block-usligi.anime .block-anime_uslugi{
+    display: none;
+}
+.block-usligi.anime li.onclick{
+    display: block !important;
+   
+}
+.block-usligi.anime li.onclick .title{    
+    font-size: 4.4em;
+    line-height: 1.5;
+    height: 4em;
+    display: block;
+    max-width: 40vw;
+    
+}
+.block-usligi.anime li.onclick .title:hover{
+    background: none;
+}
+.block-usligi.anime .btn.more{
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    left: -50vw;
+    animation: display3 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+.block-usligi.anime .block-content_uslug{
+    display: inline-block;
+    opacity: 0;
+    animation: display3 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+.block-usligi.anime .list li{
+    display: inline-block;
+}
+header.anime .header-right{  
+    animation: display 0.5s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+header.anime .row:first-child .header-right{
+    animation: display2 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    box-sizing: border-box;
+}
+header.anime{   
+    animation: background2-anime 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    min-height: 443px;
+}
+header.anime .row::nth-child(2){
+    margin-bottom: 0;
+}
+
+@keyframes background1-anime {
+    0% {
+        background-position: 0 -390px;
+        width: 50vw;
+    }
+    20% {
+        background-position: 0 bottom;
+        width: 50vw;
+    }
+    40%{
+        background-position: 0 bottom;
+        background-repeat: repeat-x;
+        width: 100%;
+    }
+    60%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: right bottom;
+    }
+    100%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: right bottom;
+        background-size: calc(50vw - 15px) 100%;
+       
+    }
+}
+@keyframes display {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes display2 {
+    0% {
+        opacity: 1;
+ }
+    40%{
+        opacity: 0;
+        
+    }
+    80%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes display3{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes display4 {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes background2-anime {
+    0% {
+        background: url(../img/bg_uslugi_anime2.jpg) no-repeat;
+        background-size: calc(50vw - 15px);
+        background-position: right 505px;
+    }
+    
+    100%{
+        background: url(../img/bg_uslugi_anime2.jpg) no-repeat;
+        background-size: calc(50vw - 15px);
+        background-position: right top;
+
+    }
+}
+
+.block-usligi.anime2 .btn,.block-usligi.anime2 .btn.more{
+    display: none;
+}
+.block-usligi.anime2, .block-usligi.anime2 ul.list_uslugi {
+    height: 115px;
+    min-height: 115px;
+}
+.block-usligi.anime2 .block-content_uslug{
+    animation: display4 0.5s ease;
+    animation-fill-mode: forwards;
+}
+.block-usligi.anime2 .list_uslugi{
+    animation: display2 2s ease;
+    animation-fill-mode: forwards;
+}
+header.anime2{
+    min-height: 443px !important;
+}
+ header.anime2{
+    animation: background3-anime 2s ease;
+    animation-fill-mode: forwards;
+}
+header.anime2 #logo{
+    animation: display2 1.5s ease;
+    animation-fill-mode: forwards;
+}
+.block-usligi.anime2{
+    animation: background4-anime 2s ease;
+    animation-fill-mode: forwards;
+}
+.block-usligi.anime2.anime3{
+    animation: background5-anime 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background3-anime {
+    0% {
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: 50vw bottom;
+        background-size: auto;
+    }
+    
+   30%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: left bottom;
+       
+    }
+    60%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -50vw bottom;
+        
+    }
+    80%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -120vw bottom;
+        
+    }
+    100%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -120vw bottom;
+    }
+    
+}
+@keyframes background4-anime  {
+    0% {
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: 50vw bottom;
+        background-size: auto;
+    }
+    
+    30%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: left bottom;
+        height: 115px;
+       
+    }
+    60%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -50vw bottom;
+        height: 335px;
+       
+    }
+    80%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -120vw bottom;
+        height: 335px;
+       
+    }
+    100%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -120vw bottom;
+        height: 335px;
+       
+    }
+    
+}
+@keyframes background5-anime  {
+    0% {
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: 50vw bottom;
+        background-size: auto;
+    }
+    
+    30%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: left bottom;
+        height: 115px;
+       
+    }
+    60%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -50vw bottom;
+        height: 335px;
+       
+    }
+    80%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -50vw bottom;
+        height: 335px;
+       
+    }
+    100%{
+        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
+        background-position: -50vw bottom;
+        height: 335px;
+       
+    }
+    
+}
+
+
+.block-contact.anime_form .block-form_contact{
+    animation: popup_form-anime 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+#form_popup .anime_form .block-form_contact h5, 
+#form_popup .anime_form .block-form_contact form{
+    animation: popup_display-anime 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.block-contact.anime_form2 .block-form_contact{
+    animation: popup_form-anime2 3s ease;
+    animation-fill-mode: forwards;  
+}
+
+#form_popup .anime_form2 .block-form_contact h5, 
+#form_popup .anime_form2 .block-form_contact form{
+    animation: popup_display-anime2 1s ease;
+    animation-fill-mode: forwards;   
+}
+@keyframes popup_form-anime{
+    0%{      
+    }
+    100%{
+        width: 755px;
+        height: 400px;
+        padding: 70px;
+        background-size: 50px, 50px, 50px, 50px;
+    }
+}
+@keyframes popup_display-anime{
+    0%{
+        opacity: 0;     
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes popup_form-anime2{
+       
+    0%{
+        width: 755px;
+        height: 400px;
+        padding: 70px;
+        background-size: 50px, 50px, 50px, 50px;
+    }
+    100%{      
+        width: 345px;
+        height: 345px;
+        padding: 170px;
+        background-size: 160px, 160px, 160px, 160px;
+        margin: 0 auto;
+    }
+}
+@keyframes popup_display-anime2{
+    0%{
+        opacity: 1;     
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#form_popup .anime_form2 .submit_text{
+    animation: popup_display-anime 1s ease;
+    animation-fill-mode: forwards;
+}
+#form_popup .anime_form2 .submit_text .lt, #form_popup .anime_form2 .submit_text .lb{
+    animation: rotate_coner-anime 1s ease;
+    animation-fill-mode: forwards;
+}
+#form_popup .anime_form2 .submit_text .rt, #form_popup .anime_form2 .submit_text .rb{
+    animation: rotate_coner2-anime 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate_coner-anime{
+    0%{
+        transform: rotate(0);     
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate_coner2-anime{
+    0%{
+        transform: rotate(0);     
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+.block-usligi .open .block-content_uslug {
+  max-height: 700px;
+}
+
+.block-usligi .block-content_uslug {
+  -webkit-transition: max-height 1.5s;
+  transition: max-height 1.5s;
+  max-height: 0;
+}
