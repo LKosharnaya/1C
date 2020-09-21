@@ -104,7 +104,8 @@ section {
     display: block;
 }
 
-input:focus {
+input:focus,
+button {
     border: none;
     outline: none
 }
