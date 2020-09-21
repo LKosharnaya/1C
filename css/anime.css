@@ -703,14 +703,15 @@ ul.uslugi a:hover span {
     }
 }
 
-.licenses ul.list-lic.open_list {
-    max-height: 1000px;
-    height: auto;
-    display: block;
-}
-
-.licenses ul.list-lic {
-    -webkit-transition: max-height 2s;
-    transition: max-height 2s;
-    max-height: 0;
+@media screen and (max-width:1024px) {
+    .licenses ul.list-lic.open_list {
+        max-height: 1000px;
+        height: auto;
+        display: block;
+    }
+    .licenses ul.list-lic {
+        -webkit-transition: max-height 2s;
+        transition: max-height 2s;
+        max-height: 0;
+    }
 }
