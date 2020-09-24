@@ -522,7 +522,7 @@ header.anime2 #logo {
 
 #form_popup .anime_form .block-form_contact h5,
 #form_popup .anime_form .block-form_contact form {
-    animation: popup_display-anime 1s ease;
+    animation: display3 1s ease;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
 }
@@ -545,15 +545,6 @@ header.anime2 #logo {
         height: 400px;
         padding: 70px;
         background-size: 50px, 50px, 50px, 50px;
-    }
-}
-
-@keyframes popup_display-anime {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
 
@@ -688,7 +679,7 @@ ul.uslugi a:hover span {
         animation-fill-mode: forwards;
     }
     ul.list-lic li:hover:before {
-        animation: popup_display-anime 1s ease;
+        animation: display3 1s ease;
         animation-fill-mode: forwards;
     }
     ul.list-lic li:hover {
@@ -725,5 +716,282 @@ ul.uslugi a:hover span {
         -webkit-transition: max-height 2s;
         transition: max-height 2s;
         max-height: 0;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .col.impl:hover .or.br,
+    .col.impl:hover .redd.tl {
+        animation: rotate2 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.impl:hover .or.bl {
+        animation: rotate3 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.impl:hover .yel.br {
+        animation: rotate5 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.impl:hover .hover {
+        animation: bsize-anime 0.5s ease;
+        animation-fill-mode: forwards;
+        display: flex;
+        animation-delay: 0.5s;
+    }
+    .col.impl:hover .btn,
+    .col.dev:hover .hover_dev .btn,
+    .col.edo:hover .hover_edo .btn,
+    .col.rent:hover .hover_rent .btn,
+    .col.report:hover .hover_report .btn,
+    .col.connect:hover .hover_connect .btn,
+    .col.site:hover .hover_site .btn {
+        display: block;
+        opacity: 0;
+        animation: display3 0.5s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+    .col.dev:hover .hover_dev {
+        animation: bsize-anime 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.edo:hover .line {
+        animation: height_line-anime 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.edo:hover .hover_edo {
+        animation: width_edo 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.9s;
+        display: flex;
+        align-items: flex-end;
+    }
+    .col.edo:hover .hover_edo .btn {
+        animation-delay: 1.8s;
+    }
+    .col.edo:hover h3 {
+        animation: h3_edo 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1.4s;
+    }
+    .col.rent:hover .hover_rent {
+        display: flex;
+        animation: width_rent 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.rent:hover h3 {
+        animation: h3_edo 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.rent:hover h3.big2 span {
+        font-size: 26px;
+        line-height: 30px;
+        position: relative;
+        color: #000;
+        display: inline;
+    }
+    .col.report:hover .yel.br {
+        animation: report_tl 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.report:hover .yel.bl {
+        animation: report_tr 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.report:hover .yel.tr {
+        animation: report_bl 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.report:hover .yel.tl {
+        animation: report_br 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.report:hover .hover_report {
+        animation: display3 0.5s ease;
+        animation-fill-mode: forwards;
+        padding: 0 45px 60px 45px;
+        height: 100%;
+        opacity: 0;
+        animation-delay: 0.9s;
+    }
+    .col.connect:hover .hover_connect {
+        animation: width_connect 1s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.site:hover .hover_site .btn {
+        animation-delay: 1.4s;
+    }
+    .col.site:hover {
+        overflow: hidden;
+    }
+    .col.site:hover .anime-col {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        z-index: 1;
+        animation: position_anime-col 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+    .col.site:hover .hover_site {
+        animation: width_site 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes bsize-anime {
+    0% {
+        height: 0;
+        padding: 0 45px 60px 45px
+    }
+    100% {
+        height: 420px;
+        padding: 0 45px 60px 45px
+    }
+}
+
+@keyframes width_edo {
+    0% {
+        width: 50%;
+        bottom: 0;
+        top: 420px;
+        height: 4px;
+    }
+    50% {
+        width: 50%;
+        top: 0;
+        height: 420px;
+    }
+    100% {
+        width: 100%;
+        top: 0;
+        height: 420px;
+        padding: 0 45px 60px 45px
+    }
+}
+
+@keyframes height_line-anime {
+    0% {
+        height: 0px;
+    }
+    50% {
+        top: 137px;
+        height: calc(100% - 137px);
+    }
+    100% {
+        height: 0;
+        top: 420px
+    }
+}
+
+@keyframes h3_edo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: left;
+        padding-top: 90px;
+        width: 100%;
+        opacity: 0;
+    }
+    100% {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: left;
+        padding-top: 90px;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes width_rent {
+    100% {
+        left: 0;
+        width: 100%;
+        padding: 0 45px 60px 45px
+    }
+}
+
+@keyframes report_tl {
+    100% {
+        width: 75%;
+        height: 75%;
+        border-bottom-right-radius: 150%;
+    }
+}
+
+@keyframes report_tr {
+    100% {
+        width: 75%;
+        height: 75%;
+        border-bottom-left-radius: 150%;
+    }
+}
+
+@keyframes report_bl {
+    100% {
+        width: 75%;
+        height: 75%;
+        border-top-right-radius: 150%;
+    }
+}
+
+@keyframes report_br {
+    100% {
+        width: 75%;
+        height: 75%;
+        border-top-left-radius: 150%;
+    }
+}
+
+@keyframes width_connect {
+    0% {
+        width: 50%;
+        top: 0;
+        height: 4px;
+    }
+    50% {
+        width: 50%;
+        top: 0;
+        height: 420px;
+    }
+    100% {
+        width: 100%;
+        top: 0;
+        height: 420px;
+        padding: 0 45px 60px 45px
+    }
+}
+
+@keyframes position_anime-col {
+    0% {
+        right: 40px;
+        bottom: 40px;
+    }
+    100% {
+        bottom: -96px;
+        right: -93px;
+    }
+}
+
+@keyframes width_site {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        width: 150%;
+        height: 150%;
+        border-top-left-radius: 300%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0;
+        padding: 0 45px 60px 45px;
+        opacity: 1;
     }
 }
