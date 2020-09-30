@@ -62,7 +62,7 @@ if (wwidth >= 768) {
         $('.block-anime_uslugi').removeClass('anime1');
     });
 
-    $('.title').on('click', function() {
+    $('.list_uslugi .title').on('click', function() {
         $('header').removeClass('anime2');
         $('.block-usligi').removeClass('anime2');
         $('header').addClass('anime');
@@ -85,7 +85,7 @@ if (wwidth >= 768) {
         $('.block-usligi').removeClass('anime');
         $('.block-usligi').removeClass('anime2');
     }
-    $('.btn.close').on('click', function() {
+    $('.list_uslugi .btn.close').on('click', function() {
         $('header').addClass('anime2');
         $('.block-usligi').addClass('anime2');
         setTimeout($('li.onclick').removeClass('onclick'), 1000);
@@ -222,6 +222,15 @@ if (wwidth < 1024) {
         } else {
             $(this).siblings('.list-lic').addClass('open_list');
             $(this).text('свернуть').addClass('close');
+        }
+    });
+    $('.composition .more').on('click', function(){
+        if ($(this).hasClass('close')) {
+            $(this).text('читать подробнее').removeClass('close');
+            $(this).parents('.row').removeClass('open');
+        }else{
+            $(this).text('свернуть').addClass('close');
+            $(this).parents('.row').addClass('open');
         }
     });
 
