@@ -1,0 +1,360 @@
+.uslugi-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 11.2em;
+}
+
+.uslugi-columns h2 {
+    font-size: 2.8em;
+    padding-top: 80px;
+}
+
+.uslugi-columns .col {
+    width: 33%;
+    height: 420px;
+    padding: 90px 40px 40px 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.uslugi-columns .col .btn {
+    display: none;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.uslugi-columns .col .hover {
+    display: none;
+    background: #F8AD03;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    align-items: flex-end;
+}
+
+.uslugi-columns .col1-2 {
+    width: 66%
+}
+
+.uslugi-columns .col:nth-child(2) {
+    background: #fff;
+}
+
+.uslugi-columns h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.uslugi-columns .col:hover h3 {
+    z-index: 10;
+}
+
+.uslugi-columns h3.big {
+    font-size: 4.6em;
+    line-height: 1.3;
+    text-align: right;
+    width: 50%;
+}
+
+.uslugi-columns h3.big2 {
+    font-size: 15.8em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.uslugi-columns h3.big2 span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.26em;
+    line-height: 86px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F8AD03;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 0;
+}
+
+.anime-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col.dev {
+    border-top: 4px solid #F8AD03;
+}
+
+.col.edo {
+    background: #fff;
+    padding-top: 0;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col.report {
+    background: #fff;
+}
+
+.col.rent {
+    padding-top: 40px;
+}
+
+.col.report div.yel {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+.col.report .br {
+    border-bottom-right-radius: 98px;
+    top: 0;
+    left: 0;
+}
+
+.col.report .bl {
+    border-bottom-left-radius: 98px;
+    top: 0;
+    right: 0;
+}
+
+.col.report .tl {
+    border-top-left-radius: 98px;
+    bottom: 0;
+    right: 0;
+}
+
+.col.report .tr {
+    border-top-right-radius: 98px;
+    bottom: 0;
+    left: 0;
+}
+
+.col.site {
+    background: #fff;
+}
+
+.col.site .anime-block {
+    justify-content: flex-end;
+}
+
+.uslugi-columns .col:hover h3 {
+    z-index: 5;
+}
+
+.hover_edo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 50%;
+    z-index: 1;
+    background: #F8AD03;
+}
+
+.col.edo .line {
+    position: absolute;
+    z-index: 5;
+    top: 137px;
+    right: 49px;
+    width: 37px;
+    height: 0;
+    background: #F8AD03;
+}
+
+.hover_dev,
+.hover_report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    z-index: 1;
+    background: #F8AD03;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hover_rent {
+    position: absolute;
+    left: calc(50% - 5px);
+    right: calc(50% - 5px);
+    top: 0;
+    height: 100%;
+    width: 10px;
+    z-index: 1;
+    background: #F8AD03;
+    display: none;
+    align-items: flex-end;
+}
+
+.hover_connect {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    height: 4px;
+    width: 50%;
+    z-index: 1;
+    background: #F8AD03;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hover_site {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 83px;
+    height: 83px;
+    background: #F8AD03;
+    border-top-left-radius: 166px;
+    align-items: flex-end;
+    display: flex;
+    opacity: 0;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1025px) and (max-width:1520px) {
+    .anime-col div {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .uslugi-columns .col {
+        min-height: 380px;
+    }
+    .uslugi-columns h2 {
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+    .uslugi-columns h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .uslugi-columns .col {
+        padding: 60px 20px 40px;
+    }
+    .col.impl .anime-block .anime-col:nth-child(2),
+    .col.impl .anime-block .anime-col:nth-child(1) .red {
+        display: none;
+    }
+    .anime-col {
+        width: 100%;
+        max-width: 100%;
+    }
+    .uslugi-columns .col .hover,
+    .hover_dev,
+    .hover_report,
+    .hover_edo,
+    .hover_connect,
+    .hover_site,
+    .hover_rent {
+        background: none;
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 100%;
+        opacity: 1;
+        align-items: flex-end;
+        left: 0;
+    }
+    .uslugi-columns .col .btn {
+        display: block;
+        background: #000;
+        color: #fff;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .hover_dev,
+    .hover_report {
+        height: 80%;
+    }
+    .hover_edo {
+        height: 71%;
+    }
+    .hover_connect {
+        height: 73%;
+    }
+    .hover_rent {
+        padding-top: 50px;
+    }
+    .hover_site {
+        padding-top: 20px;
+    }
+    .uslugi-columns h3.big {
+        width: 100%;
+    }
+    .col.edo {
+        display: block;
+    }
+    .col.edo .btn {
+        margin-top: 50px;
+    }
+    .uslugi-columns h3.big2 {
+        font-size: 12.3em;
+    }
+    .uslugi-columns h3.big2 span {
+        font-size: 0.23em;
+    }
+    .col.site .anime-block {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .col.site .anime-col {
+        width: 100px;
+    }
+    .col.site .anime-col div {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 7px;
+    }
+    .col.site .anime-col .yel {
+        background: #EF7D2A;
+        border-top-left-radius: 92px;
+    }
+    .col.site .anime-col div:nth-child(2) {
+        background: #F8AD03;
+        border-top-right-radius: 92px;
+    }
+    .col.site .anime-col div:nth-child(3) {
+        background: #E63D28;
+        border-bottom-left-radius: 92px;
+    }
+    .col.site .anime-col .red {
+        background: #B72A22;
+        border-bottom-right-radius: 92px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header nav a:hover,
+    header nav a.active {
+        opacity: 0.4;
+    }
+    .uslugi-columns .col1-2,
+    .uslugi-columns .col {
+        width: 100%;
+        height: auto;
+    }
+}

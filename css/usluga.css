@@ -1,0 +1,255 @@
+.mobile{
+    display: none;
+}
+.content-usluga{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2.usluga{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8em;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    width: 50%;
+}
+.column{
+    width: 50%;
+}
+.description{
+    display: flex;
+    justify-content: flex-start;
+}
+.description::before{
+    content: '';
+    height: 4px;
+    width: 100px;
+    background: #000;
+    display: inline-block;
+    margin:10px 30px 0 0;
+}
+.description p, .description ul{
+    display: block;
+    width: calc(100% - 130px);
+}
+.description ul li{
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.allows, .privilege{
+    margin-top: 7.2em;
+}
+.allows ul{
+    margin-right: 7.8em;
+}
+.column h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.column ul li{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.row.buttons{
+    justify-content: flex-end;
+    width: 100%;
+}
+.row.buttons .block-buttons{
+    width: 50%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-usluga .btn{
+    padding: 30px 70px;
+}
+.content-usluga .btn.btn-black{
+    padding: 32px 70px;
+}
+.composition .head-comp{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.w50{
+    width: 50%;   
+}
+.composition .w50{
+    border: 3px solid #000000;
+    border-bottom: none;
+    text-align: left;
+    padding: 30px 40px;
+}
+.w25{
+    width: 25%;  
+}
+.composition .w25{
+    border: 3px solid #000000;
+    border-bottom: none;
+    border-left: none;
+    text-align: center;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+}
+.row:last-child .w50, .row:last-child .w25{
+    border-bottom:  3px solid #000000
+}
+.composition {
+    margin-top: 7.2em;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.composition .head-comp span{
+    display: block;
+    background: #fff;       
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.w25 p{
+    text-align: center;
+    width: 100%;
+}
+.composition h4.name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    }
+p.note{
+    width:100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-align:justify;
+    padding-left: 30vw;
+    margin-bottom: 12em;
+}
+
+@media screen and (max-width:1520px){
+    .content-usluga .btn {
+        padding: 20px 35px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .allows, .privilege,
+    .row.buttons .block-buttons{
+        width: 100%;
+    }
+    .row.buttons .block-buttons{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .row.buttons .block-buttons .btn:first-child{
+        margin-right: 20px;
+    }
+    .description::before{
+        width: 50px;
+        margin-right: 15px;
+    }
+    .description p{
+        width: calc(100% - 65px);
+    }
+}
+@media screen and (max-width:767px){
+    .mobile{
+        display: block;
+    }
+    h2.usluga, .column, .w50, .w25, .content-usluga .btn{
+        width: 100%;
+    }
+    h2.usluga{
+        font-size: 24px;
+    }
+    .allows, .privilege{
+        margin-top: 30px;
+    }
+    .allows ul{
+        margin-right: 0;
+    }
+    .row.buttons .block-buttons .btn:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .content-usluga .btn.btn-black{
+        padding: 22px 35px;
+        text-align: center;
+    }
+    .composition .head-comp,
+    .composition .w50 p{
+        display: none;
+    }
+    .composition .row{
+        margin-bottom: 20px;
+    }
+    .composition .w50{
+        border: 3px solid #000;
+        padding: 0;
+    }
+    .composition .w25{
+        padding: 0;
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+        border-top: 0;
+        flex-wrap: wrap;
+        text-align: left;
+        display: none;
+    }
+    .composition h4{
+        border-bottom: 3px solid #000;
+        padding: 20px;
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: left;
+    }
+    .composition h4.name{
+        background: #fff;
+        margin-bottom: 0;
+    }
+    .w25 p, .w50 p{
+        padding: 10px 20px;
+    }
+    p.note{
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .composition .row{
+        overflow: hidden;
+  
+    }
+    .row.open .w50 p, .row.open .w25{
+        display: block;
+      }
+}

@@ -1,0 +1,120 @@
+.coners .row,.block-anime_uslugi .row {
+    display: flex;
+    justify-content: space-between;
+}
+.coners .row .col, .block-anime_uslugi .column,
+.anime-col{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 170px;
+    margin-left: 10px;
+}
+.coners .row .col div,
+.block-anime_uslugi span,
+.anime-col div{
+    width: 82px;
+    height: 82px;
+    margin-bottom: 10px;
+}
+.coners .row .col .yel, 
+.block-anime_uslugi .yel,
+.anime-col .yel,
+.col.report div.yel{
+    background: #F8AD03;
+}
+.coners .row .col .or,
+.block-anime_uslugi .or,
+.anime-col .or{
+    background: #EF7D2A;
+}
+.coners .row .col .red, .block-anime_uslugi .red,
+.anime-col .red
+{
+    background: #E63D28;
+}
+.coners .row .col .redd, .block-anime_uslugi .redd,
+.anime-col .redd{
+    background: #B72A22;
+}
+
+.block-anime_uslugi .column {
+    width: 20%;
+}
+
+.block-anime_uslugi .tr,
+.anime-col .tr,
+#dpartners .coners .row:nth-child(2) .col:first-child .or,
+#services .coners .row:first-child .col:first-child .or,
+#services .coners .row:first-child .col:first-child .red,
+#services .coners .row:first-child .col:nth-child(2) .yel,
+#services .coners .row:nth-child(2) .col:first-child .yel,
+#job .coners .row .col:first-child .yel,
+#job .coners .row .col:nth-child(2) .red
+ {
+    border-top-right-radius: 164px;
+}
+
+.block-anime_uslugi .tl,
+.anime-col .tl,
+#dpartners .coners .row:first-child .col:nth-child(2) .red,
+#dpartners .coners .row:nth-child(2) .col:first-child .yel,
+#dpartners .coners .row:nth-child(2) .col:nth-child(2) .redd,
+#services .coners .row:first-child .col:first-child .yel,
+#services .coners .row:first-child .col:first-child .redd,
+#services .coners .row:first-child .col:nth-child(2) .redd,
+#services .coners .row:nth-child(2) .col:first-child .redd,
+#job .coners .row .col:first-child .redd,
+#job .coners .row .col:nth-child(2) .or{
+    border-top-left-radius: 164px;
+}
+
+.block-anime_uslugi .bl,
+.anime-col .bl,
+#dpartners .coners .row:first-child .col:first-child .red,
+#dpartners .coners .row:nth-child(2) .col:first-child .red,
+#dpartners .coners .row:nth-child(2) .col:nth-child(2) .yel,
+#dpartners .coners .row:nth-child(2) .col:nth-child(2) .red,
+#services .coners .row:first-child .col:nth-child(2) .red,
+#services .coners .row:nth-child(2) .col:first-child .red,
+#services .coners .row:nth-child(2) .col:nth-child(2) .or,
+#services .coners .row:nth-child(2) .col:nth-child(2) .red,
+#job .coners .row .col:first-child .red,
+#job .coners .row .col:nth-child(2) .yel{
+    border-bottom-left-radius: 164px;
+}
+
+.block-anime_uslugi .br,
+.anime-col .br,
+#dpartners .coners .row:first-child .col .redd,
+#dpartners .coners .row:nth-child(2) .col:first-child .redd,
+#dpartners .coners .row:nth-child(2) .col:nth-child(2) .or,
+#services .coners .row:first-child .col:nth-child(2) .or,
+#dpartners .coners .row:nth-child(2) .col:nth-child(2) .redd,
+#services .coners .row:nth-child(2) .col:first-child .or,
+#services .coners .row:nth-child(2) .col:nth-child(2) .yel,
+#services .coners .row:nth-child(2) .col:nth-child(2) .redd,
+#job .coners .row .col:first-child .or,
+#job .coners .row .col:nth-child(2) .redd{
+    border-bottom-right-radius: 164px;
+}
+.anime-col {
+    max-width: 176px;
+    width: 50%;
+}
+.anime-col:first-child{
+    margin-left: 0;
+}
+.anime-col div:nth-child(3),
+.anime-col div:nth-child(4) {
+    margin-bottom: 0;
+}
+@media screen and (max-width:1520px){
+    .company-block .coners .row .col{
+        width:49.5%
+    }
+    .company-block .coners .row .col div{
+        width: 62px;
+        height: 62px;
+    }
+}
