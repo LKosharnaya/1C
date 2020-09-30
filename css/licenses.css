@@ -185,12 +185,7 @@ ul.list-lic li:hover .btn:hover {
 }
 
 @media screen and (max-width:767px) {
-    header {
-        padding-top: 0;
-    }
-    header #logo {
-        margin: 15px auto 0;
-    }
+   
     .licenses-left,
     .licenses-right {
         padding-right: 0;

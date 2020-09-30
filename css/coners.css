@@ -118,3 +118,10 @@
         height: 62px;
     }
 }
+@media screen and (max-width:1024px){
+    .anime-col {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

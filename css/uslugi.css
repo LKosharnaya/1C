@@ -259,10 +259,7 @@
     .col.impl .anime-block .anime-col:nth-child(1) .red {
         display: none;
     }
-    .anime-col {
-        width: 100%;
-        max-width: 100%;
-    }
+    
     .uslugi-columns .col .hover,
     .hover_dev,
     .hover_report,
@@ -348,10 +345,6 @@
 }
 
 @media screen and (max-width:767px) {
-    header nav a:hover,
-    header nav a.active {
-        opacity: 0.4;
-    }
     .uslugi-columns .col1-2,
     .uslugi-columns .col {
         width: 100%;

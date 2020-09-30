@@ -1017,6 +1017,12 @@ footer ul a {
     h2 {
         font-size: 48px;
     }
+    header {
+        padding-top: 0;
+    }
+    header #logo {
+        margin: 15px auto 0;
+    }
     .row,
     .row .content {
         flex-wrap: wrap;
