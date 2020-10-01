@@ -153,6 +153,10 @@ $(document).ready(function() {
             }
         });
     }
+    var span_text = $('.col.rent h3').text().split(" ");
+    if(span_text.length > 0) {
+        $(".col.rent h3").html(span_text[0]+'<span>'+span_text[1]+'</span>');
+    }
 });
 $('body').on('click', '#form_popup .submit', function() {
     var tel = $('#form_popup .tel').val();
@@ -235,3 +239,4 @@ if (wwidth < 1024) {
     });
 
 }
+
