@@ -175,6 +175,7 @@ ul.list-lic li:hover .btn:hover {
         background: #F8AD03;
         text-align: left;
         margin-left: 0;
+        padding-left: 10px;
     }
     .licenses .btn-black {
         padding: 15px 0;
