@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.uslugi-columns .col .hover {
+.uslugi-columns .col .hover_impl {
     display: none;
     background: #F8AD03;
     position: absolute;
@@ -260,7 +260,7 @@
         display: none;
     }
     
-    .uslugi-columns .col .hover,
+    .uslugi-columns .col .hover_impl,
     .hover_dev,
     .hover_report,
     .hover_edo,

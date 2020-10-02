@@ -733,7 +733,7 @@ ul.uslugi a:hover span {
         animation: rotate5 0.5s ease;
         animation-fill-mode: forwards;
     }
-    .col.impl:hover .hover {
+    .col.impl:hover .hover_impl {
         animation: bsize-anime 0.5s ease;
         animation-fill-mode: forwards;
         display: flex;
@@ -774,6 +774,7 @@ ul.uslugi a:hover span {
         animation: h3_edo 1s ease;
         animation-fill-mode: forwards;
         animation-delay: 1.4s;
+        max-height: 80px;
     }
     .col.rent:hover .hover_rent {
         display: flex;
