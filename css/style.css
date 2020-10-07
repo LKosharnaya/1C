@@ -1040,6 +1040,7 @@ footer ul a {
     }
     header .row {
         margin-bottom: 75px;
+        margin-top:20px;
     }
     header .row:first-child .header-right a:first-child::before {
         content: '\f879';
