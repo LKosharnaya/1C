@@ -119,6 +119,24 @@ if (wwidth >= 768) {
         $('.block-usligi').addClass('anime');
 
     }
+    $('.tab_company.contact li').on('click', function() {
+        var id = $(this).attr('id');
+        if ($(this).hasClass('active')) {
+            return false;
+        } else {
+            $(this).addClass('active');
+            if (id == 'li_1c') {
+                $('#ot_1c').addClass('active');
+                $('#ot_prod').removeClass('active');
+                $('#li_prod').removeClass('active');
+            }
+            if (id == 'li_prod') {
+                $('#ot_1c').removeClass('active');
+                $('#ot_prod').addClass('active');
+                $('#li_1c').removeClass('active');
+            }
+        }
+    });
 
 }
 
@@ -154,8 +172,8 @@ $(document).ready(function() {
         });
     }
     var span_text = $('.col.rent h3').text().split(" ");
-    if(span_text.length > 0) {
-        $(".col.rent h3").html(span_text[0]+'<span>'+span_text[1]+'</span>');
+    if (span_text.length > 0) {
+        $(".col.rent h3").html(span_text[0] + '<span>' + span_text[1] + '</span>');
     }
 });
 $('body').on('click', '#form_popup .submit', function() {
@@ -228,15 +246,14 @@ if (wwidth < 1024) {
             $(this).text('свернуть').addClass('close');
         }
     });
-    $('.composition .more').on('click', function(){
+    $('.composition .more').on('click', function() {
         if ($(this).hasClass('close')) {
             $(this).text('читать подробнее').removeClass('close');
             $(this).parents('.row').removeClass('open');
-        }else{
+        } else {
             $(this).text('свернуть').addClass('close');
             $(this).parents('.row').addClass('open');
         }
     });
 
 }
-
