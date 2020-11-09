@@ -30,7 +30,7 @@ $(document).ready(function() {
   var arr_page =[];
   var page1 = window.location.href;
   var coc_page = get_cookie ( "url" );
-  if(coc_page !== null){
+  /*if(coc_page !== null){
     if (coc_page !== page1){
       $.each(arr_page, function(i){
         var search = String(arr_page[i]);
@@ -47,14 +47,14 @@ $(document).ready(function() {
         }
       });
     }
-  }else{
+  }else{*/
     $('#banner').popup({
       opacity: 0.5,
       transition: 'all 0.5s',
       autoopen: true
     });
     
-  }
+  /*}*/
     set_cookie ( "url", page1 );
 
       var marquee = $("#marquee"); 
