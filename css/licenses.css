@@ -45,29 +45,64 @@ ul.list-lic span.li {
     position: absolute;
     transform: translateX(0);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 40px;
     z-index: 10;
 }
 
-ul.list-lic li:before {
-    height: 6px;
-    display: none;
-    width: 102px;
-    background: #000 url(../img/line2.gif) no-repeat left center;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 18px;
-    background-size: 100%;
-    opacity: 0;
-    z-index: 1;
+ul.list-lic span.li .text {
+    order: 1;
 }
 
-ul.list-lic li:hover:before {
-    display: block;
+ul.list-lic span.li .price {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #444444;
+    padding-left: 5px;
+    order: 2;
+}
+
+ul.list-lic span.li .price::before {
+    content: '-';
+}
+
+ul.list-lic span.li:hover .price {
+    order: 1;
+    background: #000;
+    font-size: 16px;
+    color: #F8AD03;
+    white-space: nowrap;
+    text-overflow: clip;
+    display: inline-block;
+    line-height: 46px;
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.list-lic span.li:hover .price::before {
+    content: '';
+}
+
+
+ul.list-lic span.li:hover .text::before {
+    content: '';
+    border: 23px solid transparent;
+    border-left: 17px solid #000;
+    position: relative;
+    left: 0;
+    font-size: 0;
+    top: -5px;
+}
+
+ul.list-lic span.li:hover .text {
+    order: 2;
+    position: relative;
+    line-height: 40px;
+    padding-top: 3px;
 }
 
 .licenses .btn-black {
@@ -82,13 +117,20 @@ ul.list-lic li .btn {
     text-align: center;
     border: none;
     margin-left: 20px;
-    border-left: 3px solid #000;
     text-indent: 0;
+    order: 3;
 }
 
 ul.list-lic li:hover {
     border: 3px solid rgba(0, 0, 0, 0);
     cursor: pointer;
+}
+
+ul.list-lic li:hover span.text {
+    width: calc(100% - 250px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 ul.list-lic li:hover .btn {
@@ -105,20 +147,49 @@ ul.list-lic li:hover .btn:hover {
     margin: 20px 0 30px;
 }
 
+.licenses a.link-price {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin: 20px 0 40px;
+}
+
+.licenses a.link-price:hover {
+    text-decoration: none;
+}
+
+
 @media screen and (min-width:1025px) and (max-width:1540px) {
     .licenses {
         margin-bottom: 8.4em;
         background-repeat: no-repeat;
         background-size: 370px;
     }
+
     ul.list-lic li .btn {
         font-size: 16px;
     }
+
     ul.list-lic li:hover {
         height: 40px;
     }
+
     ul.list-lic li:before {
         top: 15px;
+    }
+
+    ul.list-lic span.li {
+        height: 34px;
+    }
+
+    ul.list-lic span.li span.text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc (100% - 250px);
     }
 }
 
@@ -129,6 +200,7 @@ ul.list-lic li:hover .btn:hover {
         margin-top: -13px;
         margin-right: 20px;
     }
+
     .licenses {
         background-size: 315px;
         display: flex;
@@ -136,38 +208,53 @@ ul.list-lic li:hover .btn:hover {
         flex-wrap: wrap;
         min-height: 245px;
     }
+
     .licenses h2 {
         font-size: 24px;
         order: 1;
     }
-    .licenses .consult {
+
+    .licenses a.link-price {
         order: 2;
+        margin: 40px 0 20px;
     }
-    .licenses .more {
+
+    .licenses .consult {
         order: 3;
+    }
+
+    .licenses .more {
+        order: 4;
         display: block;
     }
+
     .licenses ul {
-        order: 4;
+        order: 5;
         display: none;
         height: 0px;
     }
+
     .licenses-right {
         padding-left: 45%;
         background-position: left top;
     }
+
     .licenses-left {
         padding-right: 45%;
         background-position: right top;
     }
+
     .list-lic.open_list li {
         height: auto;
+        margin-top: 20px;
     }
+
     ul.list-lic span.li {
         flex-wrap: wrap;
         height: auto;
         position: inherit;
     }
+
     .list-lic.open_list li .btn {
         display: block;
         width: 100%;
@@ -177,16 +264,18 @@ ul.list-lic li:hover .btn:hover {
         margin-left: 0;
         padding-left: 10px;
     }
+
     .licenses .btn-black {
         padding: 15px 0;
     }
+
     .licenses .btn {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width:767px) {
-   
+
     .licenses-left,
     .licenses-right {
         padding-right: 0;
@@ -194,7 +283,30 @@ ul.list-lic li:hover .btn:hover {
         background-position: top center;
         background-size: 210px;
     }
+
     .licenses {
         padding-top: 230px;
+    }
+
+    ul.list-lic span.li .price {
+        display: block;
+        width: 100%;
+    }
+
+    ul.list-lic span.li .price::before {
+        content: '';
+    }
+
+    ul.list-lic span.li:hover .price {
+        background: none;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: bold;
+        color: #444444;
+        padding-left: 5px;
+        order: 2;
+        height: auto;
+        position: relative;
+        overflow: hidden;
     }
 }
