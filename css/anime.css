@@ -188,6 +188,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(270deg);
     }
@@ -197,6 +198,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(180deg);
     }
@@ -206,6 +208,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(90deg);
     }
@@ -215,6 +218,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(-180deg);
     }
@@ -224,6 +228,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(-90deg);
     }
@@ -231,7 +236,7 @@
 
 .block-usligi.anime {
     background: url(../img/bg_uslugi_anime.jpg) no-repeat;
-    animation: background1-anime 5s ease;
+    animation: background1-anime 1s ease;
     animation-fill-mode: forwards;
     height: 505px;
     box-sizing: border-box;
@@ -267,17 +272,17 @@
     opacity: 0;
     position: absolute;
     left: -50vw;
-    animation: display3 1s ease;
+    animation: display3 0.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .block-usligi.anime .block-content_uslug {
     display: inline-block;
     opacity: 0;
-    animation: display3 1s ease;
+    animation: display3 0.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 1s;
 }
 
 .block-usligi.anime .list li {
@@ -287,20 +292,20 @@
 header.anime .header-right {
     animation: display 0.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 header.anime .row:first-child .header-right {
-    animation: display2 3s ease;
+    animation: display2 1.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     box-sizing: border-box;
 }
 
 header.anime {
-    animation: background2-anime 1s ease;
+    animation: background2-anime 0.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 2.5s;
+    animation-delay: 0.9s;
     min-height: 443px;
 }
 
@@ -313,19 +318,22 @@ header.anime .row::nth-child(2) {
         background-position: 0 -390px;
         width: 50vw;
     }
-    20% {
+
+    10% {
+        background: url(../img/bg_uslugi_anime3.jpg);
         background-position: 0 bottom;
         width: 50vw;
     }
-    40% {
-        background-position: 0 bottom;
+
+
+    60% {
+        background: url(../img/bg_uslugi_anime3.jpg);
         background-repeat: repeat-x;
         width: 100%;
-    }
-    60% {
-        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: right bottom;
+        background-size: calc(80vw - 15px) 100%;
     }
+
     100% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: right bottom;
@@ -337,6 +345,7 @@ header.anime .row::nth-child(2) {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -346,12 +355,15 @@ header.anime .row::nth-child(2) {
     0% {
         opacity: 1;
     }
+
     40% {
         opacity: 0;
     }
+
     80% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -361,6 +373,7 @@ header.anime .row::nth-child(2) {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -370,6 +383,7 @@ header.anime .row::nth-child(2) {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         display: none;
@@ -382,6 +396,7 @@ header.anime .row::nth-child(2) {
         background-size: calc(50vw - 15px);
         background-position: right 505px;
     }
+
     100% {
         background: url(../img/bg_uslugi_anime2.jpg) no-repeat;
         background-size: calc(50vw - 15px);
@@ -415,23 +430,24 @@ header.anime2 {
 }
 
 header.anime2 {
-    animation: background3-anime 2s ease;
+    animation: background3-anime 1s linear;
     animation-fill-mode: forwards;
 }
 
 header.anime2 #logo {
-    animation: display2 1.5s ease;
+    animation: display2 1s ease;
     animation-fill-mode: forwards;
 }
 
 .block-usligi.anime2 {
-    animation: background4-anime 2s ease;
+    animation: background4-anime 2s linear;
     animation-fill-mode: forwards;
 }
 
 .block-usligi.anime2.anime3 {
-    animation: background5-anime 2s ease;
+    animation: background5-anime 1s linear;
     animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 @keyframes background3-anime {
@@ -440,21 +456,16 @@ header.anime2 #logo {
         background-position: 50vw bottom;
         background-size: auto;
     }
-    30% {
+
+    35% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: left bottom;
     }
-    60% {
-        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
-        background-position: -50vw bottom;
-    }
-    80% {
-        background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
-        background-position: -120vw bottom;
-    }
+
+
     100% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
-        background-position: -120vw bottom;
+        background-position: -200vw bottom;
     }
 }
 
@@ -464,21 +475,25 @@ header.anime2 #logo {
         background-position: 50vw bottom;
         background-size: auto;
     }
+
     30% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: left bottom;
         height: 115px;
     }
+
     60% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -50vw bottom;
         height: 335px;
     }
+
     80% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -120vw bottom;
         height: 335px;
     }
+
     100% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -120vw bottom;
@@ -492,21 +507,25 @@ header.anime2 #logo {
         background-position: 50vw bottom;
         background-size: auto;
     }
+
     30% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: left bottom;
         height: 115px;
     }
+
     60% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -50vw bottom;
         height: 335px;
     }
+
     80% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -50vw bottom;
         height: 335px;
     }
+
     100% {
         background: url(../img/bg_uslugi_anime3.jpg) no-repeat;
         background-position: -50vw bottom;
@@ -515,16 +534,14 @@ header.anime2 #logo {
 }
 
 .block-contact.anime_form .block-form_contact {
-    animation: popup_form-anime 3s ease;
+    animation: popup_form-anime 0.5s linear;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
 }
 
 #form_popup .anime_form .block-form_contact h5,
 #form_popup .anime_form .block-form_contact form {
-    animation: display3 1s ease;
+    animation: display3 0.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
 }
 
 .block-contact.anime_form2 .block-form_contact {
@@ -539,11 +556,23 @@ header.anime2 #logo {
 }
 
 @keyframes popup_form-anime {
-    0% {}
+    0% {
+        height: 340px;
+        max-width: 340px;
+        width: 100%;
+    }
+
+    40% {
+        width: 400px;
+        height: 400px;
+        padding: 60px;
+        background-size: 50px, 50px, 50px, 50px;
+    }
+
     100% {
         width: 755px;
         height: 400px;
-        padding: 70px;
+        padding: 60px;
         background-size: 50px, 50px, 50px, 50px;
     }
 }
@@ -555,6 +584,7 @@ header.anime2 #logo {
         padding: 70px;
         background-size: 50px, 50px, 50px, 50px;
     }
+
     100% {
         width: 345px;
         height: 345px;
@@ -568,6 +598,7 @@ header.anime2 #logo {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -594,6 +625,7 @@ header.anime2 #logo {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(180deg);
     }
@@ -603,6 +635,7 @@ header.anime2 #logo {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(-180deg);
     }
@@ -613,14 +646,18 @@ header.anime2 #logo {
 }
 
 .block-usligi .block-content_uslug {
-    -webkit-transition: max-height 1.5s;
-    transition: max-height 1.5s;
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
     max-height: 0;
 }
 
 @media screen and (max-width:767px) {
     @keyframes popup_form-anime {
-        0% {}
+        0% {
+            width: 320px;
+            height: 320px;
+        }
+
         100% {
             width: 100%;
             height: 605px;
@@ -628,6 +665,7 @@ header.anime2 #logo {
             background-size: 50px, 50px, 50px, 50px;
         }
     }
+
     @keyframes popup_form-anime2 {
         0% {
             width: 100%;
@@ -635,6 +673,7 @@ header.anime2 #logo {
             padding: 60px 0;
             background-size: 50px, 50px, 50px, 50px;
         }
+
         100% {
             width: 305px;
             height: 305px;
@@ -659,6 +698,7 @@ ul.uslugi a:hover span {
     0% {
         transform: scaleX(0)
     }
+
     100% {
         transform: scaleX(102)
     }
@@ -668,22 +708,25 @@ ul.uslugi a:hover span {
     0% {
         transform: translateX(0)
     }
+
     100% {
         transform: translateX(130px)
     }
 }
 
 @media screen and (min-width:1025px) {
-    ul.list-lic li:hover span.li {
+    ul.list-lic li:hover .price {
         animation: indent-animate 0.5s ease;
         animation-fill-mode: forwards;
     }
-    ul.list-lic li:hover:before {
-        animation: display3 1s ease;
+
+    ul.list-lic li:hover {
+        animation: boder-animate 0.5s ease;
         animation-fill-mode: forwards;
     }
-    ul.list-lic li:hover {
-        animation: boder-animate 1s ease;
+
+    ul.list-lic li .btn {
+        animation: boder-animate2 0.5s ease;
         animation-fill-mode: forwards;
     }
 }
@@ -692,26 +735,39 @@ ul.uslugi a:hover span {
     0% {
         border: 3px solid rgba(0, 0, 0, 0);
     }
+
     100% {
         border: 3px solid rgba(0, 0, 0, 1);
     }
 }
 
+@keyframes boder-animate2 {
+    0% {
+        border-left: 3px solid rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        border-left: 3px solid rgba(0, 0, 0, 1);
+    }
+}
+
 @keyframes indent-animate {
     0% {
-        text-indent: 0;
+        width: 0;
     }
+
     100% {
-        text-indent: 130px;
+        width: 100px;
     }
 }
 
 @media screen and (max-width:1024px) {
     .licenses ul.list-lic.open_list {
-        max-height: 1000px;
+        max-height: 1500px;
         height: auto;
         display: block;
     }
+
     .licenses ul.list-lic {
         -webkit-transition: max-height 2s;
         transition: max-height 2s;
@@ -720,25 +776,30 @@ ul.uslugi a:hover span {
 }
 
 @media screen and (min-width:1025px) {
+
     .col.impl:hover .or.br,
     .col.impl:hover .redd.tl {
         animation: rotate2 0.5s ease;
         animation-fill-mode: forwards;
     }
+
     .col.impl:hover .or.bl {
         animation: rotate3 0.5s ease;
         animation-fill-mode: forwards;
     }
+
     .col.impl:hover .yel.br {
         animation: rotate5 0.5s ease;
         animation-fill-mode: forwards;
     }
+
     .col.impl:hover .hover_impl {
         animation: bsize-anime 0.5s ease;
         animation-fill-mode: forwards;
         display: flex;
         animation-delay: 0.5s;
     }
+
     .col.impl:hover .btn,
     .col.dev:hover .hover_dev .btn,
     .col.edo:hover .hover_edo .btn,
@@ -752,14 +813,17 @@ ul.uslugi a:hover span {
         animation-fill-mode: forwards;
         animation-delay: 1s;
     }
+
     .col.dev:hover .hover_dev {
         animation: bsize-anime 0.5s ease;
         animation-fill-mode: forwards;
     }
+
     .col.edo:hover .line {
         animation: height_line-anime 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.edo:hover .hover_edo {
         animation: width_edo 1s ease;
         animation-fill-mode: forwards;
@@ -767,24 +831,29 @@ ul.uslugi a:hover span {
         display: flex;
         align-items: flex-end;
     }
+
     .col.edo:hover .hover_edo .btn {
         animation-delay: 1.8s;
     }
+
     .col.edo:hover h3 {
         animation: h3_edo 1s ease;
         animation-fill-mode: forwards;
         animation-delay: 1.4s;
         max-height: 80px;
     }
+
     .col.rent:hover .hover_rent {
         display: flex;
         animation: width_rent 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.rent:hover h3 {
         animation: h3_edo 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.rent:hover h3.big2 span {
         font-size: 26px;
         line-height: 30px;
@@ -792,22 +861,27 @@ ul.uslugi a:hover span {
         color: #000;
         display: inline;
     }
+
     .col.report:hover .yel.br {
         animation: report_tl 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.report:hover .yel.bl {
         animation: report_tr 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.report:hover .yel.tr {
         animation: report_bl 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.report:hover .yel.tl {
         animation: report_br 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.report:hover .hover_report {
         animation: display3 0.5s ease;
         animation-fill-mode: forwards;
@@ -816,16 +890,20 @@ ul.uslugi a:hover span {
         opacity: 0;
         animation-delay: 0.9s;
     }
+
     .col.connect:hover .hover_connect {
         animation: width_connect 1s ease;
         animation-fill-mode: forwards;
     }
+
     .col.site:hover .hover_site .btn {
         animation-delay: 1.4s;
     }
+
     .col.site:hover {
         overflow: hidden;
     }
+
     .col.site:hover .anime-col {
         position: absolute;
         right: 40px;
@@ -834,6 +912,7 @@ ul.uslugi a:hover span {
         animation: position_anime-col 0.5s ease;
         animation-fill-mode: forwards;
     }
+
     .col.site:hover .hover_site {
         animation: width_site 1s ease;
         animation-fill-mode: forwards;
@@ -846,6 +925,7 @@ ul.uslugi a:hover span {
         height: 0;
         padding: 0 45px 60px 45px
     }
+
     100% {
         height: 420px;
         padding: 0 45px 60px 45px
@@ -859,11 +939,13 @@ ul.uslugi a:hover span {
         top: 420px;
         height: 4px;
     }
+
     50% {
         width: 50%;
         top: 0;
         height: 420px;
     }
+
     100% {
         width: 100%;
         top: 0;
@@ -876,10 +958,12 @@ ul.uslugi a:hover span {
     0% {
         height: 0px;
     }
+
     50% {
         top: 137px;
-        height: calc(100% - 137px);
+        height: calc(100% - 13heightpx);
     }
+
     100% {
         height: 0;
         top: 420px
@@ -890,6 +974,7 @@ ul.uslugi a:hover span {
     0% {
         opacity: 0;
     }
+
     50% {
         font-size: 26px;
         line-height: 30px;
@@ -898,6 +983,7 @@ ul.uslugi a:hover span {
         width: 100%;
         opacity: 0;
     }
+
     100% {
         font-size: 26px;
         line-height: 30px;
@@ -954,11 +1040,13 @@ ul.uslugi a:hover span {
         top: 0;
         height: 4px;
     }
+
     50% {
         width: 50%;
         top: 0;
         height: 420px;
     }
+
     100% {
         width: 100%;
         top: 0;
@@ -972,6 +1060,7 @@ ul.uslugi a:hover span {
         right: 40px;
         bottom: 40px;
     }
+
     100% {
         bottom: -96px;
         right: -93px;
@@ -982,12 +1071,14 @@ ul.uslugi a:hover span {
     0% {
         opacity: 1;
     }
+
     99% {
         width: 150%;
         height: 150%;
         border-top-left-radius: 300%;
         opacity: 1;
     }
+
     100% {
         width: 100%;
         height: 100%;
@@ -996,4 +1087,3 @@ ul.uslugi a:hover span {
         opacity: 1;
     }
 }
-
