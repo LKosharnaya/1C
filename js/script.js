@@ -96,10 +96,11 @@ if (wwidth >= 768) {
     var thisId;
     $('body').on('click', '.btn.next', function() {
         $('header').addClass('anime2');
+        $('.block-usligi').removeClass('anime');
         $('.block-usligi').addClass('anime2 anime3');
         thisId = $(this).parents('.onclick').attr('id');
         $(this).parents('.onclick').removeClass('onclick');
-        setTimeout(NextUsluga, 2000);
+        setTimeout(NextUsluga, 1000);
     });
 
     function NextUsluga() {
@@ -147,10 +148,10 @@ function Display() {
 $(document).ready(function() {
     $('#form_popup').popup({
         opacity: 0.5,
-        transition: 'all 0.5s',
+        transition: 'all 0.1s',
         onopen: function() {
             $('#form_popup .block-contact').addClass('anime_form');
-            setTimeout(Display, 3000);
+            setTimeout(Display, 500);
         },
         onclose: function() {
             $('#form_popup .block-contact').removeClass('anime_form');
@@ -176,60 +177,64 @@ $(document).ready(function() {
         $(".col.rent h3").html(span_text[0] + '<span>' + span_text[1] + '</span>');
     }
 });
-$('body').on('click', '#form_popup .submit', function() {
-    var tel = $('#form_popup .tel').val();
-    var email = $('#form_popup .email').val();
-    var name = $('#form_popup .name').val();
-    let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-    var re = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if (tel == '') {
-        $('#form_popup .tel').css('border-bottom', '1px solid #f00');
-        $('#form_popup .error_tel').css('display', 'block').text('введите номер телефона');
+// ФУНКЦИЯ ЗАКОММЕНТИРОВАНА ПО СОВЕТУ ЛЮБЫ (03.11.2020)
+// $('body').on('click', '#form_popup .submit', function() {
+//     var tel = $('#form_popup .tel').val();
+//     var email = $('#form_popup .email').val();
+//     var name = $('#form_popup .name').val();
+//     let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+//     var re = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+//     if (tel == '') {
+//         $('#form_popup .tel').css('border-bottom', '1px solid #f00');
+//         $('#form_popup .error_tel').css('display', 'block').text('введите номер телефона');
 
-    } else if (!regex.test(tel)) {
-        $('#form_popup .tel').css('border-bottom', '1px solid #f00');
-        $('#form_popup .error_tel').css('display', 'block').text('введите корректный номер телефона');
+//     } else if (!regex.test(tel)) {
+//         $('#form_popup .tel').css('border-bottom', '1px solid #f00');
+//         $('#form_popup .error_tel').css('display', 'block').text('введите корректный номер телефона');
 
-    } else {
-        $('#form_popup .error_tel').css('display', 'none');
-        $('#form_popup .tel').css('border-bottom', '1px solid #444');
-    }
+//     } else {
+//         $('#form_popup .error_tel').css('display', 'none');
+//         $('#form_popup .tel').css('border-bottom', '1px solid #444');
+//     }
 
-    if (email == '') {
-        $('#form_popup .email').css('border-bottom', '1px solid #f00');
-        $('#form_popup .error_email').css('display', 'block').text('введите email');
+//     if (email == '') {
+//         $('#form_popup .email').css('border-bottom', '1px solid #f00');
+//         $('#form_popup .error_email').css('display', 'block').text('введите email');
 
-    } else if (!re.test(email)) {
-        $('#form_popup .email').css('border-bottom', '1px solid #f00');
-        $('#form_popup .error_email').css('display', 'block').text('введите корректный email');
+//     } else if (!re.test(email)) {
+//         $('#form_popup .email').css('border-bottom', '1px solid #f00');
+//         $('#form_popup .error_email').css('display', 'block').text('введите корректный email');
 
-    } else {
-        $('#form_popup .error_email').css('display', 'none');
-        $('#form_popup .email').css('border-bottom', '1px solid #444');
-    }
-    if (name == '') {
-        $('#form_popup .name').css('border-bottom', '1px solid #f00');
-        $('#form_popup .error_name').css('display', 'block').text('введите имя');
+//     } else {
+//         $('#form_popup .error_email').css('display', 'none');
+//         $('#form_popup .email').css('border-bottom', '1px solid #444');
+//     }
+//     if (name == '') {
+//         $('#form_popup .name').css('border-bottom', '1px solid #f00');
+//         $('#form_popup .error_name').css('display', 'block').text('введите имя');
 
-    } else {
-        $('#form_popup .name').css('border-bottom', '1px solid #444');
-        $('#form_popup .error_name').css('display', 'none');
-    }
-    if (tel != '' && regex.test(tel) && email != '' && re.test(email) && name != '') {
+//     } else {
+//         $('#form_popup .name').css('border-bottom', '1px solid #444');
+//         $('#form_popup .error_name').css('display', 'none');
+//     }
+//     if (tel != '' && regex.test(tel) && email != '' && re.test(email) && name != '') {
 
-        $('#form_popup .text').css('border-bottom', '1px solid #444');
-        $('#form_popup .err').css('display', 'none');
-        $('#form_popup .block-contact').addClass('anime_form2');
-        setTimeout(opasityForm, 3000);
+//         $('#form_popup .text').css('border-bottom', '1px solid #444');
+//         $('#form_popup .err').css('display', 'none');
+//         $('#form_popup .block-contact').addClass('anime_form2');
+//         setTimeout(opasityForm, 3000);
 
-        return false;
-    }
-    if (tel == '' || !regex.test(tel) || email == '' || !re.test(email) || name == '') {
-        return false;
-    }
+//         return false;
+//     }
+//     if (tel == '' || !regex.test(tel) || email == '' || !re.test(email) || name == '') {
+//         return false;
+//     }
+//     //------
+//     else{
+//         $('#form_popup form').submit() ;
+//     }
 
-
-});
+// });
 
 function opasityForm() {
     $('#form_popup .block-contact').removeClass('anime_form');
@@ -257,3 +262,35 @@ if (wwidth < 1024) {
     });
 
 }
+//---
+$('body').on('click', '.btn.file', function() {
+    var input = $(this).siblings("input.file");
+   var btn = this;
+   $(this).siblings("input.file").click();
+   $(input).on('change',function(){
+       var file = $(input).val();
+       $(btn).hide();
+       $(btn).siblings('span.name-file').text(file);
+   });
+});
+
+/*licenses*/
+$('body').on('click','.licenses .form_popup_open', function(){
+    var block = $(this).parents('.licenses');
+    if (block.hasClass('pred')){
+        $('.pred_step1').css('display','flex');
+        $('.pred_step2').css('display','none');
+    }
+});
+$('body').on('click','.pred_step1 .btn-black', function(){
+    var sel = $('.pred_step1 select').val();
+    console.log(sel);
+    if (sel != null) { 
+        $('.pred_step1').css('display','none');
+        $('.pred_step2').css('display','flex');
+    }else{
+        $('.pred_step1 select').css('border', '1px solid red')
+    }
+    
+});
+
