@@ -7,6 +7,7 @@
 @import url(licenses.css);
 @import url(coners.css);
 @import url(contacts.css);
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #ECE8E2;
@@ -157,9 +158,9 @@ header.index #logo {
     font-size: 20px;
     line-height: 28px;
     color: #444444;
-    max-width: 295px;
+    max-width: 425px;
     display: inline-block;
-    height: 90px;
+    height: 99px;
     width: auto;
     padding-top: 10px;
     margin: 0;
@@ -242,6 +243,10 @@ h3 {
     padding: 1.1em 2.5em;
 }
 
+.list_uslugi li:last-child .block-content_uslug .btn.btn-black.next {
+    display: none;
+}
+
 .block-usligi .block-content_uslug .close {
     position: absolute;
     top: -55px;
@@ -257,11 +262,13 @@ h3 {
     line-height: 35px;
     color: #000000;
     margin-top: 4em;
+    min-height: 35px;
 }
 
 .block-usligi .block-content_uslug .list {
     margin-top: 20px;
     margin-bottom: 14.5em;
+    min-height: 385px;
 }
 
 .block-usligi .block-content_uslug .list li {
@@ -575,6 +582,7 @@ footer .content .col .titel {
     width: 228px;
     border-bottom: 3px solid rgba(68, 68, 68, 0.5);
     margin-bottom: 15px;
+    height: 45px;
 }
 
 footer .content .col:nth-child(1) .titel {
@@ -769,54 +777,68 @@ footer ul a {
     html {
         font-size: 14px;
     }
+
     .pl {
         padding-left: 2.5em;
     }
+
     header.index,
     header.anime {
         height: 430px;
         min-height: 430px;
         box-sizing: border-box;
     }
+
     .block-uslugi h3 {
         margin-left: 23em;
     }
+
     .block-uslugi ul {
         margin-left: 30em;
     }
+
     .block-form_contact {
         padding: 55px 0 70px 55px;
     }
+
     .block-usligi .block-content_uslug .list {
         margin-bottom: 0;
-        height: 465px;
+        height: 555px;
     }
+
     .block-usligi .block-content_uslug .btn,
     .block-usligi .btn.more {
         padding: 1.1em 30px !important;
     }
+
     .block-usligi .block-content_uslug .btn.close {
         top: 30px;
     }
+
     footer .content .col {
         width: 23%;
         margin-left: 2.1em;
     }
+
     footer .content .col:nth-child(1),
     footer .content .col:nth-child(1) .titel {
         width: 247px;
     }
+
     footer ul li,
     footer ul a {
         font-size: 14px;
     }
+
     footer .content .col .titel {
         width: 100%;
         max-width: 228px;
     }
+
     .block-licenses {
         background-size: 65%;
     }
+
     h2 {
         font-size: 7em;
     }
@@ -826,20 +848,25 @@ footer ul a {
     .block-anime_uslugi {
         width: 65%;
     }
+
     .block-anime_uslugi span {
         width: 58px;
         height: 58px;
         margin-bottom: 10px;
     }
+
     .block-anime_uslugi .column {
         justify-content: space-around;
     }
+
     .block-usligi .btn {
         font-size: 1.1em !important;
     }
+
     .block-licenses {
         background-size: 85%;
     }
+
     .block-usligi.anime li.onclick .title {
         width: 45%;
         font-size: 3.4em;
@@ -850,157 +877,201 @@ footer ul a {
     html {
         font-size: 14px;
     }
+
     header.index nav {
         width: 66%;
     }
+
     header nav {
         width: 60%;
     }
+
     header.index nav a {
         margin-right: 2.6em;
     }
+
     header nav a {
         margin-right: 1.5em;
     }
+
     header p {
         font-size: 13px;
     }
+
     header.index #logo {
         font-size: 14px;
         background-size: 70px;
         padding-left: 95px;
         width: 32%;
     }
+
     .header-right {
         padding: 0;
         text-align: right;
         width: 50%;
         flex-wrap: wrap;
     }
+
     header .row:first-child .header-right {
         width: 30%;
         margin-top: -35px;
     }
+
     .header-right p {
         text-align: left;
     }
+
     .pl {
         padding-left: 6em;
     }
+
     h2 {
         font-size: 5em;
     }
+
     .block-anime_uslugi span {
         width: 70px;
         height: 70px;
     }
+
     .block-anime_uslugi .column {
         min-width: 145px;
     }
+
     .block-anime_uslugi .col-5 {
         display: none;
     }
+
     .block-usligi {
         margin-bottom: 8.5em;
     }
+
     .block-usligi span.title {
         font-size: 1.8em;
         margin-bottom: 15px;
         display: inline-block;
     }
+
     .block-uslugi h3 {
         margin-left: 16.2em;
     }
+
     .block-uslugi ul {
         margin-left: 21em;
     }
+
     .block-anime_uslugi {
         width: 75%;
         overflow: hidden;
     }
+
     .block-anime_uslugi .row {
         margin-right: -75px;
     }
+
     .block-usligi.anime {
         height: 400px;
     }
+
     .block-usligi.anime ul.list_uslugi {
         height: 400px;
     }
+
     .block-usligi .block-content_uslug {
         right: 15px;
         width: 45%;
         top: -240px;
     }
+
     .block-usligi.anime li.onclick .title {
         height: 7.1em;
     }
+
     .block-usligi .block-content_uslug .list {
         margin-bottom: 25px;
     }
+
     .block-usligi .block-content_uslug .btn {
         font-size: 14px !important;
         padding: 35px 30px !important;
     }
+
     .block-licenses {
         background-size: 70%;
         background-position: 135% 75px;
         min-height: 550px;
         margin-bottom: 0;
     }
+
     .block-licenses ul {
         width: 39%;
     }
+
     ul.uslugi li {
         height: auto;
     }
+
     ul.uslugi a span {
         position: inherit;
     }
+
     .block-turn_to_us .block-orange li {
         font-size: 24px;
     }
+
     .block-turn_to_us {
         margin-bottom: -8.5em;
     }
+
     .block-turn_to_us .block-orange {
         width: 65%;
     }
+
     .block-trust_us {
         padding-top: 14.5em;
     }
+
     .block-trust_us h3 {
         padding-left: 1.5em;
     }
+
     .block-trust_us .list-logo {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .block-trust_us .list-logo li {
         margin: 0 15px;
     }
+
     .block-contact .content {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
     .block-contact .logo-footer {
         margin-bottom: 3em;
     }
+
     footer .content .col .titel,
     footer .content .col:nth-child(1) .titel {
         width: 100%;
     }
+
     footer .content .col:nth-child(1) {
         width: 100%;
         order: 1;
     }
+
     footer .content .col:nth-child(2) {
         margin-left: 0;
         width: 20%;
     }
+
     footer .content .col {
         width: 30%;
     }
+
     footer .content .col:nth-child(1) ul {
         display: flex;
         justify-content: flex-start;
@@ -1009,46 +1080,58 @@ footer ul a {
         background-size: 60px;
         flex-wrap: wrap;
     }
+
     footer .content .col:nth-child(1) ul li {
         margin-left: 50px;
         font-size: 12px;
     }
+
     footer .content .col:nth-child(1) ul li a,
     footer ul li,
     footer ul a {
         font-size: 12px;
     }
+
     footer .content .col:nth-child(1) ul li:nth-child(1) {
         order: 1;
         margin-right: 15px;
     }
+
     footer .content .col:nth-child(1) ul li:nth-child(2) {
         order: 3;
         margin-right: 70px;
     }
+
     footer .content .col:nth-child(1) ul li:nth-child(3) {
         order: 2;
         margin-right: 70px;
     }
+
     footer .content .col:nth-child(1) ul li:nth-child(4) {
         order: 4
     }
+
     header.anime,
     header.anime2 {
         min-height: 375px !important;
     }
+
     .block-usligi.anime li.onclick .title {
         font-size: 2.5em;
     }
+
     .block-usligi .btn.more {
         padding: 30px;
     }
+
     #form_popup {
         width: 90%;
     }
+
     .tab_company {
         margin-bottom: 50px;
     }
+
     .tab_company li a {
         height: 125px;
     }
@@ -1058,45 +1141,57 @@ footer ul a {
     * {
         box-sizing: border-box;
     }
+
     html {
         font-size: 14px;
     }
+
     h2 {
         font-size: 48px;
     }
+
     header {
         padding-top: 0;
     }
+
     header #logo {
         margin: -15px auto 0;
     }
+
     .row,
     .row .content {
         flex-wrap: wrap;
     }
+
     header .row:first-child .header-right a:last-child {
         display: none;
     }
+
     header .row:first-child .header-right a:first-child {
         position: absolute;
         left: 20px;
         top: 20px;
     }
+
     header .row:first-child .header-right a:first-child span {
         display: none;
     }
+
     header .row {
         margin-bottom: 75px;
         margin-top: 20px;
     }
+
     header .row:first-child .header-right a:first-child::before {
         content: '\f879';
         font-family: "Font Awesome 5 Free";
         font-size: 24px;
     }
+
     header .row:first-child {
         margin-bottom: 35px;
     }
+
     header.index #logo {
         background-size: 80px;
         font-size: 16px;
@@ -1104,50 +1199,62 @@ footer ul a {
         width: 100%;
         margin-bottom: 35px;
     }
+
     .header-right {
         padding: 0;
         width: 100%;
     }
+
     header p {
         font-size: 14px;
         margin-top: 35px;
     }
+
     .pl {
         padding-left: 0;
     }
+
     .block-usligi {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 70px;
     }
+
     .block-anime_uslugi {
         position: relative;
         order: -1;
         width: 100%;
     }
+
     .block-anime_uslugi span {
         width: 15vw;
         height: 15vw;
     }
+
     .block-anime_uslugi .column {
         width: 31vw;
     }
+
     .block-anime_uslugi .col-1 {
         margin-left: 0;
     }
+
     .block-anime_uslugi .col-5,
     .block-anime_uslugi .col-4 {
         display: none;
     }
+
     .list_uslugi {
         padding: 0 15px;
         margin-top: 55px;
         width: 100%;
         box-sizing: border-box;
     }
+
     .list_uslugi .open {
         position: relative;
     }
+
     .block-usligi span.title,
     .block-usligi span.title:hover {
         font-size: 24px;
@@ -1157,10 +1264,12 @@ footer ul a {
         width: 100%;
         background: none;
     }
+
     .block-usligi .block-content_uslug .btn.btn-black.close,
     .block-usligi .block-content_uslug .btn.btn-black.next {
         display: none;
     }
+
     .block-usligi .block-content_uslug .btn.btn-black,
     .block-usligi .btn.more {
         font-size: 18px;
@@ -1169,6 +1278,7 @@ footer ul a {
         text-align: center;
         padding: 15px 0;
     }
+
     .block-usligi span.title::after {
         content: '+';
         color: #F8AD03;
@@ -1179,17 +1289,21 @@ footer ul a {
         top: 0;
         right: 0;
     }
+
     .block-usligi .open .btn.more {
         display: block;
         background: #ECE8E2;
         margin-bottom: 20px;
     }
+
     .block-usligi .open span.title::after {
         content: '-';
     }
+
     .block-usligi .block-content_uslug .block-btn {
         flex-wrap: wrap;
     }
+
     .block-usligi .block-content_uslug {
         position: inherit;
         top: auto;
@@ -1199,21 +1313,27 @@ footer ul a {
         background: #F8AD03;
         padding: 0 15px 20px;
     }
+
     header nav a {
         margin-right: 0;
     }
+
     .block-usligi .block-content_uslug h5 {
         margin-top: 0;
     }
+
     .block-usligi .block-content_uslug .list li {
         font-size: 16px;
     }
+
     .block-usligi .block-content_uslug .list {
         margin-bottom: 0;
     }
+
     .block-licenses {
         padding: 0 15px;
     }
+
     .block-licenses {
         padding: 0 15px 300px;
         background-size: contain;
@@ -1221,73 +1341,92 @@ footer ul a {
         min-height: auto;
         margin-bottom: 70px;
     }
+
     .block-uslugi {
         margin-bottom: 70px;
     }
+
     ul.uslugi a span {
         position: inherit;
     }
+
     ul.uslugi li {
         height: auto;
     }
+
     .block-uslugi h2 .border {
         height: 34px;
     }
+
     .block-uslugi h2 .text {
         text-align: right;
         right: 20px;
     }
+
     .block-uslugi h3 {
         margin-left: 0;
         margin-top: 30px;
         padding: 0 15px;
     }
+
     .block-uslugi ul {
         padding: 0 15px;
         margin-left: 0;
     }
+
     .block-turn_to_us {
         margin-bottom: -150px;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
     .block-turn_to_us h3 {
         padding: 0 15px;
     }
+
     .block-turn_to_us .block-orange {
         width: 85%;
         padding: 15px;
     }
+
     .block-turn_to_us .block-orange li {
         font-size: 20px;
         margin-bottom: 15px;
     }
+
     .block-trust_us {
         padding-top: 220px;
         margin-bottom: 70px;
     }
+
     .block-trust_us h3 {
         padding: 0 15px;
         margin-bottom: 30px;
     }
+
     .block-trust_us .list-logo {
         padding: 0 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .block-trust_us .list-logo li {
         max-width: 47%;
     }
+
     .block-trust_us .list-logo img {
         width: 100%;
         display: block;
     }
+
     .block-contact {
         margin-bottom: 20px;
     }
+
     .block-contact .content {
         flex-wrap: wrap;
     }
+
     .block-contact .logo-footer {
         order: 1;
         background-size: 62px;
@@ -1296,37 +1435,46 @@ footer ul a {
         padding-top: 23px;
         font-size: 12px;
     }
+
     .block-form_contact {
         padding: 50px 0;
         background-size: 45px, 45px, 45px, 45px;
     }
+
     .block-form_contact input.text,
     .block-form_contact textarea {
         width: 100%;
     }
+
     .block-form_contact .block-buttons {
         width: 100%;
         margin-top: 15px;
     }
+
     .block-form_contact form {
         max-width: 358px;
         margin: 0 auto;
     }
+
     footer .content .col {
         display: none;
     }
+
     footer .content .col:nth-child(1) {
         width: 100%;
         display: block;
     }
+
     footer .content .col:nth-child(1) .titel {
         width: 100%;
         height: 0;
     }
+
     footer ul li,
     footer ul a {
         font-size: 14px;
     }
+
     #form_popup {
         width: 100%;
         max-height: 100vh;
@@ -1334,48 +1482,137 @@ footer ul a {
         height: 675px;
         padding: 50px 0;
     }
+
     #form_popup .block-form_contact {
         background-size: 150px, 150px, 150px, 150px;
         padding: 160px;
     }
+
     #form_popup .block-form_contact .text,
     #form_popup .block-form_contact .form_el {
         width: 100%;
     }
+
     #form_popup .block-form_contact textarea {
-        height: 150px;
+        height: 120px;
     }
+
     #form_popup .close {
         padding: 10px;
         top: 10px;
         right: 10px;
     }
 }
+
+
 /*страница реквезиты*/
- .req h4{
-     font-size: 1.2em;
-     font-weight: bold;
-     margin-bottom: 15px;
- }
- .req p{
-     font-size: 1em;
-     margin-bottom: 35px;
- }
- .req dl{
-     font-size: 1em;
-     display: flex;
-     flex-wrap: wrap;
-     margin-bottom: 35px;
- }
- .req dt{
-     font-weight: bold;
-     width: 30%;
-     line-height: 1.5;
- }
- .req dd{
-     width: 70%;
-     line-height: 1.5;
- }
- .req a{
-     color: #000;
- }
+
+.req h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.req p {
+    font-size: 1em;
+    margin-bottom: 35px;
+}
+
+.req dl {
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.req dt {
+    font-weight: bold;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.req dd {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.req a {
+    color: #000;
+}
+
+/* new popup form*/
+.pred_step1 {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pred_step1 h5 {
+    width: calc(100% - 200px);
+    font-size: 20px;
+    line-height: 35px !important;
+}
+
+.pred_step1 select {
+    border: none;
+    width: 200px;
+    height: 35px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 35px;
+    color: #444444;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select.png) no-repeat 95% center;
+}
+
+.pred_step1 select:focus {
+    border: none;
+    outline: none;
+}
+
+.pred_step1 select option {
+    background: none;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 35px;
+    color: #444444;
+}
+
+.pred_step1 select option:hover {
+    background: #F8AD03;
+}
+
+.pred_step1 .form_el {
+    width: calc(100% - 200px) !important;
+}
+
+.pred_step1 p.price {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.pred_step1 p.price span {
+    font-size: 70px;
+    line-height: 110px;
+    display: block;
+}
+
+.pred_step1 .btn-black {
+    padding: 20px 70px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.pred_step2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
