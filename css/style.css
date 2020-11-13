@@ -618,6 +618,7 @@ footer ul a {
     width: 65%;
     min-height: 540px;
     padding: 70px 0;
+    display: none;
 }
 
 #form_popup .block-contact {
