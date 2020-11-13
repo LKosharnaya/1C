@@ -26,35 +26,93 @@ function set_cookie (name, value, exp_y, exp_m, exp_d, path, domain, secure)
   
   document.cookie = cookie_string;
 }
-$(document).ready(function() {
   var arr_page =[];
+  var test_page =[];
+$(document).ready(function() {
   var page1 = window.location.href;
-  var coc_page = get_cookie ( "url" );
-  /*if(coc_page !== null){
-    if (coc_page !== page1){
-      $.each(arr_page, function(i){
-        var search = String(arr_page[i]);
-        // ищем элементы массива не содержащие page1
-        if(search.indexOf('page1') == -1) {
-          if ( arr_page.length < 3){
-            arr_page.push(coc_page);
+  var coc_page = get_cookie("url");
+  var test_page1= sessionStorage.getItem("someNumber");
+  if(coc_page !== null){     
+    if (coc_page !== page1){ 
+        if(test_page1.indexOf(',') !== -1){
+            arr_page = test_page1.split(',');
+            $.each(arr_page, function(i){
+                var search = String(arr_page[i]);
+                // ищем элементы массива не содержащие page1
+                if(search.indexOf('page1') == -1) {
+                  if ( arr_page.length <= 3){
+                    $('#banner').css('display','inline-block');
+                    $('#banner').popup({
+                      opacity: 0.5,
+                      transition: 'all 0.5s',
+                      autoopen: true
+                    });
+                    arr_page.push(page1);
+                    sessionStorage.setItem("someNumber", arr_page);
+                  }
+                }
+            });
+          }else{
+             arr_page.push(test_page1);
+            arr_page.push(page1);
+            sessionStorage.setItem("someNumber", arr_page);
+            $('#banner').css('display','inline-block');
             $('#banner').popup({
               opacity: 0.5,
               transition: 'all 0.5s',
               autoopen: true
             });
+          }               
+      
+    }
+  }else{
+      if(test_page1 !== null ){
+          if(test_page1.indexOf(',') !== -1){
+            arr_page = test_page1.split(',');
+             arr_page.push(page1);
+            sessionStorage.setItem("someNumber", arr_page);
+             $.each(arr_page, function(i){
+        var search = String(arr_page[i]);
+        // ищем элементы массива не содержащие page1
+        if(search.indexOf('page1') == -1) {
+          if ( arr_page.length <= 3){
+            $('#banner').css('display','inline-block');
+            $('#banner').popup({
+              opacity: 0.5,
+              transition: 'all 0.5s',
+              autoopen: true
+            });
+           
           }
         }
       });
-    }
-  }else{*/
-    $('#banner').popup({
-      opacity: 0.5,
-      transition: 'all 0.5s',
-      autoopen: true
-    });
+          }else{
+            arr_page.push(test_page1);
+            arr_page.push(page1);
+            sessionStorage.setItem("someNumber", arr_page);
+            $('#banner').css('display','inline-block');
+            $('#banner').popup({
+              opacity: 0.5,
+              transition: 'all 0.5s',
+              autoopen: true
+            });
+          }        
+      }else{
+        arr_page.push(page1);
+        sessionStorage.setItem("someNumber", arr_page);
+        $('#banner').css('display','inline-block');
+        $('#banner').popup({
+          opacity: 0.5,
+          transition: 'all 0.5s',
+          autoopen: true
+        });
+      }         
+      
     
-  /*}*/
+      
+   
+    
+  }
     set_cookie ( "url", page1 );
 
       var marquee = $("#marquee"); 
