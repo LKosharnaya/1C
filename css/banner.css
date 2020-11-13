@@ -5,7 +5,7 @@
 
 }
 
-.banner_close {
+button.banner_close {
     top: 1vw;
     right: 3vw;
     position: absolute;
