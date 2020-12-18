@@ -153,6 +153,7 @@ p.note{
 }
 .table_price{
     margin-top: 35px;
+    width:100%;
 }
 .table_price .top_titel{
     background: #000;
