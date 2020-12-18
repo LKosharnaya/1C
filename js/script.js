@@ -293,4 +293,8 @@ $('body').on('click','.pred_step1 .btn-black', function(){
     }
     
 });
+$('.table_price .top_titel').on('click', function(){
+    $(this).parents('.table_price').toggleClass('open');
+
+});
 
